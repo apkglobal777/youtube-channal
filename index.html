@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#07006c", "tertiary": "#c0c1ff", "surface-variant": "#31353f", "surface-container-lowest": "#0a0e17", "primary-fixed-dim": "#adc6ff", "on-surface-variant": "#c2c6d6", "secondary-fixed": "#acedff", "inverse-surface": "#dfe2ef", "on-secondary-container": "#00424e", "tertiary-container": "#8083ff", "surface-container-low": "#181b25", "surface-dim": "#0f131c", "primary-container": "#4d8eff", "on-tertiary-container": "#0d0096", "on-primary-fixed-variant": "#004395", "secondary-container": "#03b5d3", "primary": "#adc6ff", "error": "#ffb4ab", "on-error": "#690005", "on-surface": "#dfe2ef", "surface-container": "#1c1f29", "on-background": "#dfe2ef", "background": "#0f131c", "on-tertiary": "#1000a9", "on-error-container": "#ffdad6", "on-primary-fixed": "#001a42", "inverse-primary": "#005ac2", "tertiary-fixed": "#e1e0ff", "surface-container-highest": "#31353f", "on-tertiary-fixed-variant": "#2f2ebe", "on-secondary": "#003640", "surface-container-high": "#262a34", "on-primary-container": "#00285d", "outline": "#8c909f", "surface": "#0f131c", "on-secondary-fixed": "#001f26", "on-secondary-fixed-variant": "#004e5c", "outline-variant": "#424754", "primary-fixed": "#d8e2ff", "on-primary": "#002e6a", "surface-tint": "#adc6ff", "secondary-fixed-dim": "#4cd7f6", "secondary": "#4cd7f6", "surface-bright": "#353943", "tertiary-fixed-dim": "#c0c1ff", "inverse-on-surface": "#2c303a", "error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2.5rem", "space-md": "1rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "margin": "3rem" }, "fontFamily": { "display-hero": [ "Plus Jakarta Sans" ], "headline-md": [ "Plus Jakarta Sans" ], "code-badge": [ "JetBrains Mono" ], "code-block": [ "JetBrains Mono" ], "body-lg": [ "Inter" ], "body-sm": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "JetBrains Mono" ], "display-hero-mobile": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ] }, "fontSize": { "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "code-badge": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "code-block": [ "14px", { "lineHeight": "22px", "fontWeight": "400" } ], "body-lg": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "600" } ], "display-hero-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="TechiGuru Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UMPfkQjFA3bF8nab-RnkEKW7Sb7aBIdCCdtSpzBh5pNImOTwZTx5-xZ7brOAqYGZChPAl09wlurYKqeeRqAmh0YMHFVo9NG-M0lKQvS5rvCiTRcHNoFZ5ZCIHTlq0BUs6kst8Tx0GyQgZGwVAVv3uZwOuOzGvWUmAO0V0C_zDrvJG3wuYtXSAMzuGLGhHs8VGVRZajbH6tXKmyltUuES-VcofSWYjxUXLok8gi6J0"/><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm tracking-tight bg-gradient-to-r from-secondary via-primary to-tertiary bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(76,215,246,0.35)]">TechiGuru</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest hidden sm:inline-block">Learn • Build • Grow</span></a></div><nav class="hidden xl:flex items-center gap-space-xs p-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="home" href="#">Home</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="videos" href="#">Videos</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="techiguru" href="#">TechiGuru</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="blogs" href="#">Blogs</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="collaboration" href="#">Collaboration</a><a class="px-space-sm py-space-xs font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-error-container text-on-error-container font-body-sm text-body-sm font-semibold shadow-[0_0_20px_rgba(147,0,10,0.55)] hover:shadow-[0_0_28px_rgba(255,180,171,0.65)] hover:bg-error hover:text-on-error transition-all duration-300" href="#"><span class="material-symbols-outlined text-[18px]">smart_display</span><span class="hidden sm:inline">Subscribe on YouTube</span><span class="sm:hidden">Subscribe</span></a><div class="flex items-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Wr9bntO6man9WVNaM2Byhkry0nTlg11bZqd070Lx3QGZT48Hk_yv7oYNQ8ms6AfSekFXTRTWLjZH9G074AxACQJQpk1K9HMJ1_tPyPwC6HBGPLsRapsKhhkRxrwiFKfaJuWKQ_4NUCDuFU5sETjGApdJk4SblpBCez0R3HoJ4YxbKEmDsftqYy8smwdhu_YPX_oMvU45FTyfZh8yXshgMPb6Ey2JuzRXUQhpBSU"/></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full relative overflow-hidden">
+<!-- Glow Ambient Backdrops -->
+<div class="absolute top-12 left-1/2 -translate-x-1/2 w-[800px] h-[450px] bg-gradient-to-tr from-secondary/15 via-primary-container/20 to-tertiary-container/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+<div class="absolute top-[1600px] -left-48 w-[600px] h-[600px] bg-secondary-container/10 blur-[150px] rounded-full pointer-events-none -z-10"></div>
+<div class="absolute top-[3200px] right-0 w-[600px] h-[500px] bg-primary/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+<!-- ========================================== -->
+<!-- 1. HERO SECTION                            -->
+<!-- ========================================== -->
+<section class="relative w-full px-gutter py-space-xl lg:py-margin flex flex-col items-center">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-lg shadow-black/30 mb-space-lg group cursor-default">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse shadow-[0_0_8px_#4cd7f6]"></span>
+<span class="font-code-badge text-code-badge text-secondary font-semibold uppercase tracking-wider">
+        Official Technology Hub &amp; YouTube Creator Platform
+      </span>
+<span class="material-symbols-outlined text-secondary text-[16px] group-hover:translate-x-0.5 transition-transform">bolt</span>
+</div>
+<!-- Main Headline Grid & Creator Feature -->
+<div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center mb-space-xl">
+<!-- Left Content (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md text-left">
+<h1 class="font-display-hero text-display-hero tracking-tight text-on-surface">
+          Learn <span class="bg-gradient-to-r from-secondary via-primary-fixed-dim to-tertiary bg-clip-text text-transparent">Technology.</span><br/>
+          Build <span class="bg-gradient-to-r from-primary to-secondary-fixed bg-clip-text text-transparent">Real Projects.</span><br/>
+          Grow Your Career.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Practical technology tutorials, production architectures, AI pipelines, modern full-stack web development, and cloud deployments engineered for serious developers.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-md rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-headline-sm text-body-md font-bold shadow-[0_0_25px_rgba(77,142,255,0.45)] hover:shadow-[0_0_35px_rgba(76,215,246,0.65)] hover:scale-[1.02] active:scale-[0.98] transition-all" href="#videos">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span>Watch YouTube Videos</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-md rounded-xl bg-surface-container-high/90 hover:bg-surface-container-highest text-on-surface font-body-md font-semibold backdrop-blur-md shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]" href="#collaboration">
+<span class="material-symbols-outlined text-secondary text-[20px]">handshake</span>
+<span>Work With Me</span>
+</a>
+</div>
+<!-- Verified Credential Badges -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>YouTube Partner Creator</span>
+</div>
+<span class="text-outline-variant font-code-badge">•</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">terminal</span>
+<span>Production Code Repos</span>
+</div>
+<span class="text-outline-variant font-code-badge">•</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">school</span>
+<span>Mentorship Community</span>
+</div>
+</div>
+</div>
+<!-- Right Creator Showcase Card (5 Cols) -->
+<div class="lg:col-span-5 flex justify-center lg:justify-end">
+<div class="relative w-full max-w-md p-space-md rounded-3xl bg-surface-container-low/80 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+<!-- Ambient Glow Border Effect -->
+<div class="absolute -inset-0.5 rounded-3xl bg-gradient-to-b from-secondary/40 via-primary-container/20 to-transparent -z-10 blur-sm"></div>
+<!-- Creator Photo Frame -->
+<div class="relative w-full aspect-square rounded-2xl overflow-hidden bg-surface-container">
+<img alt="TechiGuru Tech Mentor" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Wr9bntO6man9WVNaM2Byhkry0nTlg11bZqd070Lx3QGZT48Hk_yv7oYNQ8ms6AfSekFXTRTWLjZH9G074AxACQJQpk1K9HMJ1_tPyPwC6HBGPLsRapsKhhkRxrwiFKfaJuWKQ_4NUCDuFU5sETjGApdJk4SblpBCez0R3HoJ4YxbKEmDsftqYy8smwdhu_YPX_oMvU45FTyfZh8yXshgMPb6Ey2JuzRXUQhpBSU"/>
+<!-- Overlaid Status Badge -->
+<div class="absolute top-space-sm left-space-sm px-space-sm py-1 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5 shadow-md">
+<span class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></span>
+<span class="font-code-badge text-code-badge text-error font-semibold">🔴 Live Tech Mentor</span>
+</div>
+<!-- Bottom Channel Pill -->
+<div class="absolute bottom-space-sm inset-x-space-sm p-space-xs rounded-xl bg-surface-container-lowest/85 backdrop-blur-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-body-sm font-bold text-on-surface">Pawan Sharma</span>
+<span class="font-code-badge text-label-sm text-secondary">@apkglobal • @techiguru-in</span>
+</div>
+<a class="px-space-sm py-1 rounded-lg bg-error-container text-on-error-container font-label-sm text-label-sm font-bold hover:bg-error transition-colors flex items-center gap-1" href="https://www.youtube.com/c/apkglobal" target="_blank">
+<span class="material-symbols-outlined text-[14px]">smart_display</span>
+                Sub
+              </a>
+</div>
+</div>
+<!-- Bottom Card Tech Highlights -->
+<div class="mt-space-md grid grid-cols-3 gap-space-xs text-center">
+<div class="p-space-xs rounded-lg bg-surface-container-high/60">
+<span class="font-code-badge text-label-sm text-outline block">PLATFORM</span>
+<span class="font-headline-sm text-body-sm font-semibold text-secondary">techiguru.in</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-high/60">
+<span class="font-code-badge text-label-sm text-outline block">STUDENTS</span>
+<span class="font-headline-sm text-body-sm font-semibold text-primary">25,000+</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-high/60">
+<span class="font-code-badge text-label-sm text-outline block">REPOS</span>
+<span class="font-headline-sm text-body-sm font-semibold text-tertiary">100+ Free</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4 Live Metric Stat Cards -->
+<div class="w-full max-w-7xl grid grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-xl shadow-lg hover:shadow-[0_10px_30px_rgba(76,215,246,0.15)] transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">subscriptions</span>
+<span class="font-code-badge text-code-badge text-secondary bg-surface-container-high px-space-xs py-0.5 rounded">+12% MoM</span>
+</div>
+<div>
+<h3 class="font-display-hero text-headline-lg font-bold text-on-surface">150K+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Subscribers &amp; Growing Worldwide</p>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-xl shadow-lg hover:shadow-[0_10px_30px_rgba(173,198,255,0.15)] transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">video_library</span>
+<span class="font-code-badge text-code-badge text-primary bg-surface-container-high px-space-xs py-0.5 rounded">All Free</span>
+</div>
+<div>
+<h3 class="font-display-hero text-headline-lg font-bold text-on-surface">350+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Practical Production Tutorials</p>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-xl shadow-lg hover:shadow-[0_10px_30px_rgba(192,193,255,0.15)] transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[28px]">rocket_launch</span>
+<span class="font-code-badge text-code-badge text-tertiary bg-surface-container-high px-space-xs py-0.5 rounded">Deployed</span>
+</div>
+<div>
+<h3 class="font-display-hero text-headline-lg font-bold text-on-surface">50+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-World Fullstack Projects</p>
+</div>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-xl shadow-lg hover:shadow-[0_10px_30px_rgba(76,215,246,0.15)] transition-all flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-code-badge text-code-badge text-secondary bg-surface-container-high px-space-xs py-0.5 rounded">Top Rated</span>
+</div>
+<div>
+<h3 class="font-display-hero text-headline-lg font-bold text-on-surface">4.9 / 5</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Over 25,000+ Enrolled Students</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 2. INTERACTIVE YOUTUBE VIDEOS SECTION      -->
+<!-- ========================================== -->
+<section class="w-full px-gutter py-space-xl scroll-mt-24" id="videos">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-md bg-error-container text-on-error-container w-max">
+<span class="material-symbols-outlined text-[16px]">smart_display</span>
+<span class="font-code-badge text-code-badge uppercase font-semibold">YouTube Tutorials</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Master In-Demand Tech with Hands-On Code
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Stream high-yield lessons directly from our channels 
+            <a class="text-secondary hover:underline font-semibold" href="https://www.youtube.com/c/apkglobal" target="_blank">youtube.com/c/apkglobal</a> &amp; 
+            <a class="text-secondary hover:underline font-semibold" href="https://www.youtube.com/@techiguru-in" target="_blank">youtube.com/@techiguru-in</a>.
+          </p>
+</div>
+<!-- Channel Direct Banner Callout -->
+<div class="p-space-md rounded-2xl bg-surface-container-high/80 backdrop-blur-md flex items-center justify-between gap-space-md shadow-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-error flex items-center justify-center text-on-error shadow-[0_0_15px_rgba(255,180,171,0.4)]">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</div>
+<div>
+<p class="font-headline-sm text-body-sm font-bold text-on-surface">+350 Free Tutorials</p>
+<p class="font-body-sm text-label-sm text-on-surface-variant">Includes Free GitHub Source Code</p>
+</div>
+</div>
+<a class="px-space-md py-space-xs rounded-xl bg-error hover:bg-error-container text-on-error hover:text-on-error-container font-body-sm text-body-sm font-semibold transition-all" href="https://www.youtube.com/@techiguru-in" target="_blank">
+            Subscribe Now
+          </a>
+</div>
+</div>
+<!-- Search & Filters Container -->
+<div class="flex flex-col gap-space-md p-space-md rounded-2xl bg-surface-container-low/60 backdrop-blur-xl">
+<!-- Search and Sort Bar -->
+<div class="flex flex-col sm:flex-row gap-space-sm items-center justify-between">
+<div class="relative w-full sm:max-w-md">
+<span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface-container-high text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="videoSearchInput" placeholder="Search Python, MERN, AI, Docker, DSA..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<span class="font-code-badge text-code-badge text-on-surface-variant">Sort:</span>
+<select class="bg-surface-container-high text-on-surface rounded-xl px-space-sm py-space-xs font-body-sm text-body-sm focus:outline-none" id="videoSortSelect">
+<option value="latest">Latest Released</option>
+<option value="popular">Most Popular</option>
+<option value="duration">Longest Deep Dive</option>
+</select>
+</div>
+</div>
+<!-- Category Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs scrollbar-none" id="categoryChipsContainer">
+<button class="filter-chip px-space-md py-1.5 rounded-full font-code-badge text-code-badge whitespace-nowrap bg-secondary text-on-secondary font-bold shadow-[0_0_15px_rgba(76,215,246,0.4)] transition-all" data-category="all">All Tech</button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-code-badge text-code-badge whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" data-category="python">Python</button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-code-badge text-code-badge whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" data-category="ai">AI &amp; Machine Learning</button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-code-badge text-code-badge whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" data-category="mern">MERN &amp; Fullstack</button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-code-badge text-code-badge whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" data-category="java">Java &amp; Spring</button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-code-badge text-code-badge whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" data-category="devops">DevOps &amp; Cloud</button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-code-badge text-code-badge whitespace-nowrap bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" data-category="dsa">DSA &amp; System Design</button>
+</div>
+</div>
+<!-- Video Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="videoGrid">
+<!-- Video Card 1 -->
+<div class="video-card group rounded-2xl bg-surface-container-low/80 backdrop-blur-md overflow-hidden shadow-lg hover:shadow-[0_15px_35px_rgba(76,215,246,0.2)] transition-all flex flex-col justify-between" data-category="ai" data-date="2025-02-10" data-views="84000">
+<div>
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-high cursor-pointer open-video-trigger" data-id="langchain-agent" data-title="Build Full Autonomous AI Agents with LangChain &amp; DeepSeek R1">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500 flex items-center justify-center relative" data-alt="Futuristic software developer studio screen displaying autonomous AI agent node network diagram in glowing neon cyan and midnight blue, with terminal code overlay and artificial intelligence model metrics." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxvNe0PX2Ma1dP58vI26k3tSgMg6UMzKtl0doAfdtg6lFtaMff4Xg0IYsZoovznDzf8Qp-LStmLXlQ74eEIgLQnZNgoudtksD53dkyeBBMSqoVHR2YLczaxYd4frKTlkLkh-J2s62WX7BGBDnHm2eSUFI8pBKyYRJdlRJL9zOXWM4H-L21DidN8n--89FnKuNuD_ML3uOj3Lj_qit1vL2jk-nQxSfmO4L6YVoGhM0')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+<div class="w-12 h-12 rounded-full bg-surface-dim/90 backdrop-blur-md text-secondary flex items-center justify-center group-hover:scale-110 shadow-[0_0_20px_rgba(76,215,246,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-code-badge text-code-badge text-on-surface">42:15</span>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-secondary-container text-on-secondary-container font-bold">AI / LLMs</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-secondary transition-colors line-clamp-2">
+                Build Autonomous AI Agents with LangChain, LangGraph &amp; DeepSeek R1
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Step-by-step masterclass covering multi-agent orchestration, tool calling, memory management, and local model inference.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>84K views</span>
+<span>•</span>
+<span>2 weeks ago</span>
+</div>
+<button class="open-video-trigger text-secondary font-code-badge text-code-badge hover:underline font-semibold flex items-center gap-1" data-id="langchain-agent" data-title="Build Autonomous AI Agents with LangChain">
+              Watch <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Video Card 2 -->
+<div class="video-card group rounded-2xl bg-surface-container-low/80 backdrop-blur-md overflow-hidden shadow-lg hover:shadow-[0_15px_35px_rgba(77,142,255,0.2)] transition-all flex flex-col justify-between" data-category="mern" data-date="2025-01-28" data-views="115000">
+<div>
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-high cursor-pointer open-video-trigger" data-id="mern-prod" data-title="Complete Production MERN Stack 2025 with Next.js 15 &amp; Docker">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500 flex items-center justify-center relative" data-alt="High quality coding workstation showing split screen of modern React TypeScript component and Node JS Express REST API endpoints in dark theme editor with glowing electric blue syntax highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAD3ClrK47m0rxNVc8B_73KSK9s6Sm8mAdqHzJPeZkgNgxu1l8mRb6F-ySkKirjookIdHJd7JJkN7cl0hbamEzwgXmtJ73MHWCfe9CKh82800F5RC-mpieiBeMTHDV6JTYBtx-pUYu9QvjIkWAtAqKxoGBU8JwAYEdJiU4e8CnQUKx_T57Cfg1bFyOjrYB_HWuo72TiPLl9Q6qcN8n984spxaK5H2PPJPaZoSuWAwQ')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+<div class="w-12 h-12 rounded-full bg-surface-dim/90 backdrop-blur-md text-primary flex items-center justify-center group-hover:scale-110 shadow-[0_0_20px_rgba(77,142,255,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-code-badge text-code-badge text-on-surface">1:48:30</span>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-primary-container text-on-primary-container font-bold">Full Stack</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors line-clamp-2">
+                Production MERN Stack Architectures with Next.js 15, Auth &amp; Docker
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Architect enterprise-grade SaaS platforms with database indexing, JWT security, Redis caching, and automated Docker compose stacks.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>115K views</span>
+<span>•</span>
+<span>1 month ago</span>
+</div>
+<button class="open-video-trigger text-primary font-code-badge text-code-badge hover:underline font-semibold flex items-center gap-1" data-id="mern-prod" data-title="Production MERN Stack Architectures">
+              Watch <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Video Card 3 -->
+<div class="video-card group rounded-2xl bg-surface-container-low/80 backdrop-blur-md overflow-hidden shadow-lg hover:shadow-[0_15px_35px_rgba(192,193,255,0.2)] transition-all flex flex-col justify-between" data-category="python" data-date="2025-02-01" data-views="62000">
+<div>
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-high cursor-pointer open-video-trigger" data-id="python-async" data-title="Python Concurrency &amp; AsyncIO Complete Blueprint">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500 flex items-center justify-center relative" data-alt="Python code terminal showing async await coroutine event loop benchmarks with dark background and vibrant purple and cyan syntax highlights, clean typography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTKshUXCxI7-domUDa-2Ymbn3V7AdI4shEKJIbR_Go-Opm2TCcNT3tcZzIrhRjetHNCQEqdO2dgijxJ9Hr-t_AMVMMfMfoxGJphS4_XvO8kBnT8NWw68OyabhSliOSfZItHQx66r3ySpiOy6mQ-3mpnPDZ8OgkB1_c9dUQG2517qadvGBiMHB6xi0Bx-nNcTekMu4udW7cZv4bl_tKO3fP1i9GdWOdWAAwV9dB3fk')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+<div class="w-12 h-12 rounded-full bg-surface-dim/90 backdrop-blur-md text-tertiary flex items-center justify-center group-hover:scale-110 shadow-[0_0_20px_rgba(192,193,255,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-code-badge text-code-badge text-on-surface">55:10</span>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-tertiary-container text-on-tertiary-container font-bold">Python</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-tertiary transition-colors line-clamp-2">
+                Python Concurrency &amp; AsyncIO: Build High-Throughput Scrapers &amp; Microservices
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Master the GIL, event loops, thread pools, multiprocessing, and build an ultra-fast streaming data ingestion engine.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>62K views</span>
+<span>•</span>
+<span>3 weeks ago</span>
+</div>
+<button class="open-video-trigger text-tertiary font-code-badge text-code-badge hover:underline font-semibold flex items-center gap-1" data-id="python-async" data-title="Python Concurrency &amp; AsyncIO">
+              Watch <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Video Card 4 -->
+<div class="video-card group rounded-2xl bg-surface-container-low/80 backdrop-blur-md overflow-hidden shadow-lg hover:shadow-[0_15px_35px_rgba(76,215,246,0.2)] transition-all flex flex-col justify-between" data-category="devops" data-date="2025-01-15" data-views="98000">
+<div>
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-high cursor-pointer open-video-trigger" data-id="aws-k8s" data-title="AWS &amp; Kubernetes CI/CD Pipeline Crash Course">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500 flex items-center justify-center relative" data-alt="Cloud infrastructure architecture dashboard visualizing AWS ECS clusters, Kubernetes pods, and GitHub Actions continuous deployment pipelines with neon blue node connections." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDH9LoGGEYi5lHKoeP6ZugN5tM27weMjGVnCvdxpHFq2Z-vWjCjhR2WPIwgFMJCoszTG9d6gCPJgzsCQ4Wluj5g8s8OSYIXaHcT5geaJS84NVnbZGLSVfqCG1aGusIYkRAXIfw6ncTWy0iwiCplsCXDFrLNP0pzbVrMC30iMDXfWrOtIQxuSiKmLy0Mmn7FcuAv1nBi439l7yA_voMfx_7pbYcsFSTmkr-l7I7oo6o')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+<div class="w-12 h-12 rounded-full bg-surface-dim/90 backdrop-blur-md text-secondary flex items-center justify-center group-hover:scale-110 shadow-[0_0_20px_rgba(76,215,246,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-code-badge text-code-badge text-on-surface">1:12:45</span>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-secondary-container text-on-secondary-container font-bold">Cloud &amp; DevOps</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-secondary transition-colors line-clamp-2">
+                Deploy Microservices on AWS EKS with Terraform &amp; GitHub Actions CI/CD
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Zero-downtime rolling deployments, VPC subnets, IAM role least privilege, and Helm chart packaging from scratch.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>98K views</span>
+<span>•</span>
+<span>1 month ago</span>
+</div>
+<button class="open-video-trigger text-secondary font-code-badge text-code-badge hover:underline font-semibold flex items-center gap-1" data-id="aws-k8s" data-title="Deploy Microservices on AWS EKS">
+              Watch <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Video Card 5 -->
+<div class="video-card group rounded-2xl bg-surface-container-low/80 backdrop-blur-md overflow-hidden shadow-lg hover:shadow-[0_15px_35px_rgba(77,142,255,0.2)] transition-all flex flex-col justify-between" data-category="dsa" data-date="2024-12-20" data-views="145000">
+<div>
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-high cursor-pointer open-video-trigger" data-id="system-redis" data-title="System Design Interview: Distributed Cache (Redis) from Scratch">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500 flex items-center justify-center relative" data-alt="Technical system architecture whiteboard diagram explaining consistent hashing, memory eviction algorithms, and distributed database replication strategies in dark high tech aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbHBjw6fuUCYzFEqJV6C5m6Gw6aO0Bv6yNGfxkfC7u8EMrfzebfoy9fgKhWgMsz4u9gSPvDdUmQed6yRieOPIKogWY60RetR5JNrKi-U-llJisClENMMdyTiE-L6SScowJ5lDi3hlBtHvki6ggqK1vLshJxh3HpvYGFm6Y64C0AbOQomfjM6jRKHy4HoBzlzVVKuTyLkAe-9sKPk9TFI1ZR5FwPv0-2xBnpAT-uv8')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+<div class="w-12 h-12 rounded-full bg-surface-dim/90 backdrop-blur-md text-primary flex items-center justify-center group-hover:scale-110 shadow-[0_0_20px_rgba(77,142,255,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-code-badge text-code-badge text-on-surface">1:34:00</span>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-primary-container text-on-primary-container font-bold">System Design</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-primary transition-colors line-clamp-2">
+                System Design Interview Masterclass: Designing a Distributed In-Memory Cache
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Master LRU eviction, gossip protocols, consistent hashing rings, and data persistence models asked in FAANG interviews.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>145K views</span>
+<span>•</span>
+<span>2 months ago</span>
+</div>
+<button class="open-video-trigger text-primary font-code-badge text-code-badge hover:underline font-semibold flex items-center gap-1" data-id="system-redis" data-title="System Design: Distributed Cache">
+              Watch <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Video Card 6 -->
+<div class="video-card group rounded-2xl bg-surface-container-low/80 backdrop-blur-md overflow-hidden shadow-lg hover:shadow-[0_15px_35px_rgba(192,193,255,0.2)] transition-all flex flex-col justify-between" data-category="java" data-date="2025-01-05" data-views="73000">
+<div>
+<div class="relative w-full aspect-video overflow-hidden bg-surface-container-high cursor-pointer open-video-trigger" data-id="java-spring" data-title="Java Spring Boot 3 Microservices &amp; Apache Kafka">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500 flex items-center justify-center relative" data-alt="Modern code editor showing Java 21 virtual threads, Spring Boot 3 event driven microservice code with Apache Kafka consumer configurations in dark sleek interface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAeniunHqlidz02-ghFDqgezp5-CM9r5fZYdLxGDh6zKFqo4MsmddINHDYWCrqNW0gpqa6SuZYRiqmEqPt6hEKtaCHjPurNHR5I-MZEjkCYLCxSpWxfX-T5PDfyRWAeOQ4Ke8Eqx1aMQGtAbTPZ8yh7W_YLQytkJ83eADW64xZ1Bh1ZSiKmCLhKXoUXnl-0-0_YkJEPSOyE39vvyG4jXu3Z9nKD0buT7DQ9AipvRXE')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent opacity-80"></div>
+<div class="w-12 h-12 rounded-full bg-surface-dim/90 backdrop-blur-md text-tertiary flex items-center justify-center group-hover:scale-110 shadow-[0_0_20px_rgba(192,193,255,0.5)] transition-all">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/90 font-code-badge text-code-badge text-on-surface">1:20:15</span>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-tertiary-container text-on-tertiary-container font-bold">Java &amp; Kafka</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-tertiary transition-colors line-clamp-2">
+                Event-Driven Spring Boot 3 Microservices with Apache Kafka &amp; PostgreSQL
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Implement saga pattern, distributed tracing with OpenTelemetry, and dead-letter queue recovery with real metrics.
+              </p>
+</div>
+</div>
+<div class="p-space-md pt-0 flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>73K views</span>
+<span>•</span>
+<span>1 month ago</span>
+</div>
+<button class="open-video-trigger text-tertiary font-code-badge text-code-badge hover:underline font-semibold flex items-center gap-1" data-id="java-spring" data-title="Event-Driven Spring Boot 3">
+              Watch <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Channel Link Action -->
+<div class="mt-space-md flex flex-col sm:flex-row items-center justify-center gap-space-md p-space-lg rounded-2xl bg-surface-container-low/60 backdrop-blur-md">
+<span class="font-body-md text-body-md text-on-surface font-medium">Looking for our complete catalog of 350+ free technical workshops?</span>
+<div class="flex items-center gap-space-sm">
+<a class="px-space-md py-space-xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-secondary font-body-sm text-body-sm font-semibold transition-colors flex items-center gap-1" href="https://www.youtube.com/c/apkglobal" target="_blank">
+<span class="material-symbols-outlined text-[18px]">launch</span>
+            Channel 1: APKGlobal
+          </a>
+<a class="px-space-md py-space-xs rounded-xl bg-error hover:bg-error-container text-on-error hover:text-on-error-container font-body-sm text-body-sm font-semibold transition-colors flex items-center gap-1" href="https://www.youtube.com/@techiguru-in" target="_blank">
+<span class="material-symbols-outlined text-[18px]">launch</span>
+            Channel 2: TechiGuru
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Player Preview Modal -->
+<div class="fixed inset-0 z-50 bg-surface-dim/90 backdrop-blur-2xl flex items-center justify-center p-space-md hidden opacity-0 transition-opacity duration-300" id="videoModal">
+<div class="w-full max-w-4xl rounded-3xl bg-surface-container-lowest p-space-lg flex flex-col gap-space-md shadow-[0_25px_60px_rgba(0,0,0,0.9)] relative">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<h4 class="ml-space-sm font-headline-sm text-headline-sm text-on-surface font-semibold truncate max-w-lg" id="modalVideoTitle">Tutorial Preview</h4>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-colors" id="closeVideoModal">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<!-- Simulated Terminal Player Interface -->
+<div class="w-full aspect-video rounded-2xl bg-black relative flex flex-col items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-dim via-transparent to-surface-container-low opacity-60"></div>
+<div class="z-10 flex flex-col items-center gap-space-md text-center px-space-md">
+<div class="w-16 h-16 rounded-full bg-error flex items-center justify-center text-on-error shadow-[0_0_30px_rgba(255,180,171,0.6)] animate-pulse">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">Streaming Directly From YouTube</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Click below to open this full-length deep dive with source code in the official player.</p>
+<a class="px-space-lg py-space-xs rounded-xl bg-error hover:bg-error-container text-on-error hover:text-on-error-container font-body-md font-semibold transition-all shadow-lg flex items-center gap-2" href="https://www.youtube.com/@techiguru-in" id="modalExternalLink" target="_blank">
+<span>Open in YouTube App</span>
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline text-label-sm font-code-badge pt-space-xs">
+<span>TechiGuru Player Engine v4.2</span>
+<span>Resolution: 4K 60fps • CC: English &amp; Hindi</span>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- 3. ABOUT THE CREATOR SECTION               -->
+<!-- ========================================== -->
+<section class="w-full px-gutter py-space-xl bg-surface-container-lowest/40 scroll-mt-24" id="about">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Creator Biography & Narrative -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Persona & Journey (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-md bg-secondary/10 text-secondary w-max">
+<span class="material-symbols-outlined text-[16px]">person_check</span>
+<span class="font-code-badge text-code-badge uppercase font-semibold">Engineering Pedagogy</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Meet the Creator &amp; Tech Mentor
+          </h2>
+<div class="font-headline-sm text-headline-sm text-secondary font-semibold">
+            Technology Educator • Software Engineer • AI &amp; Full-Stack Specialist
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            I am Pawan Sharma, the engineer and creator behind <strong>TechiGuru</strong> and <strong>APKGlobal</strong>. Over the last decade, I observed a critical disconnect in technology education: students spend hundreds of hours learning academic syntax without ever understanding how code survives inside high-scale, multi-tier production environments.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            My mission is simple: eliminate tutorial hell by constructing zero-fluff, production-grade applications together. From low-level memory handling in C/C++ to autonomous multi-agent LLM systems and Kubernetes orchestration, I provide actionable architectural clarity that directly helps engineers clear technical interviews and build scalable products.
+          </p>
+<!-- Core Milestones -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">10+ Yrs</span>
+<span class="font-body-sm text-label-sm text-outline">Software Engineering</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">500+</span>
+<span class="font-body-sm text-label-sm text-outline">College Talks Given</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-tertiary">100%</span>
+<span class="font-body-sm text-label-sm text-outline">Practical Code First</span>
+</div>
+</div>
+</div>
+<!-- Terminal Snapshot Window (5 Cols) -->
+<div class="lg:col-span-5">
+<div class="rounded-3xl bg-surface-dim shadow-[0_20px_50px_rgba(0,0,0,0.8)] overflow-hidden">
+<!-- Window Control Header -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/80"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container/80"></span>
+<span class="w-3 h-3 rounded-full bg-primary/80"></span>
+</div>
+<span class="font-code-badge text-code-badge text-outline">mentor_profile.ts</span>
+<span class="material-symbols-outlined text-outline text-[16px]">code</span>
+</div>
+<!-- Syntax Highlighted Code Payload -->
+<div class="p-space-md font-code-block text-code-block leading-relaxed overflow-x-auto text-on-surface">
+<p><span class="text-tertiary">const</span> <span class="text-secondary">mentor</span>: <span class="text-primary-fixed-dim">CreatorProfile</span> = {</p>
+<p class="pl-4"><span class="text-on-surface-variant">name:</span> <span class="text-secondary-fixed">"Pawan Sharma"</span>,</p>
+<p class="pl-4"><span class="text-on-surface-variant">handle:</span> <span class="text-secondary-fixed">"@techiguru-in"</span>,</p>
+<p class="pl-4"><span class="text-on-surface-variant">focus:</span> [</p>
+<p class="pl-8"><span class="text-secondary-fixed">"Generative AI &amp; LangGraph"</span>,</p>
+<p class="pl-8"><span class="text-secondary-fixed">"Scalable MERN Architectures"</span>,</p>
+<p class="pl-8"><span class="text-secondary-fixed">"Distributed Cloud DevOps"</span></p>
+<p class="pl-4">],</p>
+<p class="pl-4"><span class="text-on-surface-variant">philosophy:</span> <span class="text-secondary-fixed">"Code must solve real problems."</span>,</p>
+<p class="pl-4"><span class="text-on-surface-variant">status:</span> <span class="text-primary font-semibold">"Ready for Collabs &amp; Mentorship"</span></p>
+<p>};</p>
+<p class="mt-2 text-outline">// Execute lifelong learning pipeline</p>
+<p><span class="text-tertiary">await</span> mentor.<span class="text-secondary">empowerNextGenerationDevelopers</span>();</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Comprehensive Expertise Grid (6 Core Domains) -->
+<div class="flex flex-col gap-space-md">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">
+          Technical Stack &amp; Architectural Domains
+        </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Domain 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">code_blocks</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">1. Programming Languages</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                From native systems programming to expressive modern scripts, emphasizing clean code, idiomatic paradigms, and memory efficiency.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-md">
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">Python</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">JavaScript</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">Java</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">C / C++</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">TypeScript</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">C# .NET</span>
+</div>
+</div>
+<!-- Domain 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">devices</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">2. Web Development</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Full-stack reactive web applications with Server Components, optimistic UI, state machines, and micro-frontend architectures.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-md">
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">MERN Stack</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">Next.js 15</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">Tailwind CSS</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">Node.js</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">GraphQL</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">WebSockets</span>
+</div>
+</div>
+<!-- Domain 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">phone_android</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">3. Mobile Development</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Native performance and multi-platform apps utilizing modern declarative reactive UI frameworks and background syncing.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-md">
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">Flutter &amp; Dart</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">React Native</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">Android Native</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">Expo</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">Firebase SDK</span>
+</div>
+</div>
+<!-- Domain 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">cloud</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">4. Cloud &amp; DevOps</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Cloud infrastructure orchestration with Infrastructure as Code, containerization, auto-scaling, and telemetry monitoring.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-md">
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">AWS Services</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">Docker</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">Kubernetes</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">Terraform</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-secondary">CI/CD Pipelines</span>
+</div>
+</div>
+<!-- Domain 5 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">psychology</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">5. Data &amp; AI</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Production machine learning pipelines, Retrieval-Augmented Generation (RAG), vector embeddings, and computer vision.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-md">
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">PyTorch</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">LangChain / LangGraph</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">HuggingFace</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">Vector DBs (Pinecone)</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-primary">Data Science</span>
+</div>
+</div>
+<!-- Domain 6 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-md hover:bg-surface-container transition-all flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container/20 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">account_tree</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">6. Computer Science Core</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Deep algorithmic problem solving, time-space complexity optimization, distributed databases, and high-concurrency architectures.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-space-md">
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">DSA (LeetCode Hard)</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">System Design</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">PostgreSQL / MongoDB</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">Redis Caching</span>
+<span class="px-2 py-0.5 rounded font-code-badge text-label-sm bg-surface-container-high text-tertiary">Low-Level Design (LLD)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4. TECHIGURU PLATFORM SECTION              -->
+<!-- ========================================== -->
+<section class="w-full px-gutter py-space-xl scroll-mt-24" id="techiguru">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Platform Banner Highlight -->
+<div class="relative p-space-xl rounded-3xl bg-surface-container-low/90 backdrop-blur-xl shadow-2xl overflow-hidden">
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col gap-space-sm max-w-3xl">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-badge text-code-badge text-secondary font-semibold uppercase tracking-wider">PLATFORM ECOSYSTEM</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+              Welcome to TechiGuru Platform
+            </h2>
+<p class="font-headline-sm text-headline-sm text-secondary font-medium">
+              "Practical technology education for the real world."
+            </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              TechiGuru is your ultimate destination for mastering modern technology and building real-world skills that matter. We do not just teach you how to write lines of syntax — we teach you how software engineers think, design resilient architectures, and solve real production hurdles.
+            </p>
+</div>
+<!-- High Impact Platform Link Button -->
+<div class="shrink-0 flex flex-col items-center gap-space-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto px-space-lg py-space-md rounded-2xl bg-gradient-to-r from-secondary-container via-primary to-primary-container text-on-primary-container font-headline-sm text-body-md font-bold shadow-[0_0_30px_rgba(3,181,211,0.5)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-space-sm" href="https://techiguru.in/" target="_blank">
+<span>Visit Official TechiGuru Platform</span>
+<span class="material-symbols-outlined text-[20px]">arrow_outward</span>
+</a>
+<span class="font-code-badge text-code-badge text-outline">techiguru.in • Active Hub</span>
+</div>
+</div>
+</div>
+<!-- 4 Core Educational Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-lg rounded-2xl bg-surface-container-high/60 backdrop-blur-md flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">terminal</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Practical Tutorials</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Zero fluff, zero unnecessary theory. Every single lesson starts with an empty file and finishes with a functioning product.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-high/60 backdrop-blur-md flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">deployed_code</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Real-Time Projects</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Enterprise-grade architectures you can deploy directly into your GitHub portfolio to stand out in top recruiter screenings.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-high/60 backdrop-blur-md flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">handyman</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Industry Skills</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Curriculums vetted against modern engineering team requirements: testing, linting, Dockerization, and observability.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-high/60 backdrop-blur-md flex flex-col gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">trending_up</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Career Growth</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Resume reviews, interview cracking methodologies, salary negotiation tactics, and high-impact mentoring sessions.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 5. WHAT TECHIGURU COVERS (ECOSYSTEM EXPLORER) -->
+<!-- ========================================== -->
+<section class="w-full px-gutter py-space-xl bg-surface-container-lowest/50">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs text-center items-center">
+<span class="font-code-badge text-code-badge text-primary uppercase tracking-widest font-semibold">CURRICULUM ARCHITECTURE</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">
+          What TechiGuru Covers: Deep Technical Tracks
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Explore complete production tracks designed to transition software engineers from basics to tech leadership.
+        </p>
+</div>
+<!-- Interactive Syllabus Explorer Accordions / Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Track 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low/90 backdrop-blur-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-secondary">TRACK 01</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-badge text-label-sm">48 Modules</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Modern Python for Engineers</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              From object-oriented internals and memory profiling to FastAPI microservices and distributed Celery background tasks.
+            </p>
+<div class="mt-space-xs p-space-xs rounded-lg bg-surface-container-highest/50 font-code-block text-code-badge text-on-surface-variant">
+              $ uv run app:fastapi --reload --workers 4
+            </div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-secondary">Beginner → Lead</span>
+<a class="text-on-surface hover:text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1" href="#videos">Browse Videos →</a>
+</div>
+</div>
+<!-- Track 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low/90 backdrop-blur-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-primary">TRACK 02</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-badge text-label-sm">62 Modules</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Full-Stack MERN &amp; Next.js</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Complete web architectures with React 19, TypeScript strict mode, Tailwind CSS styling, and MongoDB distributed replica sets.
+            </p>
+<div class="mt-space-xs p-space-xs rounded-lg bg-surface-container-highest/50 font-code-block text-code-badge text-on-surface-variant">
+              $ npx create-next-app@latest --typescript --tailwind
+            </div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-primary">Full-Stack</span>
+<a class="text-on-surface hover:text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1" href="#videos">Browse Videos →</a>
+</div>
+</div>
+<!-- Track 3 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low/90 backdrop-blur-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-tertiary">TRACK 03</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-badge text-label-sm">36 Modules</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Generative AI &amp; LangGraph</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Build autonomous reasoning agents, implement complex RAG architectures with hybrid retrieval, and orchestrate custom fine-tuning.
+            </p>
+<div class="mt-space-xs p-space-xs rounded-lg bg-surface-container-highest/50 font-code-block text-code-badge text-on-surface-variant">
+              workflow = StateGraph(AgentState).compile()
+            </div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-tertiary">Advanced AI</span>
+<a class="text-on-surface hover:text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-1" href="#videos">Browse Videos →</a>
+</div>
+</div>
+<!-- Track 4 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low/90 backdrop-blur-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-secondary">TRACK 04</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-badge text-label-sm">40 Modules</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">AWS &amp; Kubernetes Cloud</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Containerize complex microservices with multi-stage Docker builds, Terraform provisioning, and automated production Helm releases.
+            </p>
+<div class="mt-space-xs p-space-xs rounded-lg bg-surface-container-highest/50 font-code-block text-code-badge text-on-surface-variant">
+              $ kubectl apply -k ./overlays/production
+            </div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-secondary">Infrastructure</span>
+<a class="text-on-surface hover:text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1" href="#videos">Browse Videos →</a>
+</div>
+</div>
+<!-- Track 5 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low/90 backdrop-blur-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-primary">TRACK 05</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-badge text-label-sm">52 Modules</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Enterprise Java &amp; Spring Boot</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              High-throughput backend engineering with Java 21 virtual threads, Spring Security 6, JPA performance tuning, and Kafka messaging.
+            </p>
+<div class="mt-space-xs p-space-xs rounded-lg bg-surface-container-highest/50 font-code-block text-code-badge text-on-surface-variant">
+              ./mvnw clean package spring-boot:run
+            </div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-primary">Enterprise</span>
+<a class="text-on-surface hover:text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1" href="#videos">Browse Videos →</a>
+</div>
+</div>
+<!-- Track 6 -->
+<div class="p-space-md rounded-2xl bg-surface-container-low/90 backdrop-blur-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-tertiary">TRACK 06</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-code-badge text-label-sm">70 Modules</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface">DSA &amp; High-Scale System Design</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Dynamic programming, graph algorithms, rate limiters, message queues, distributed consensus, and FAANG architectural interviews.
+            </p>
+<div class="mt-space-xs p-space-xs rounded-lg bg-surface-container-highest/50 font-code-block text-code-badge text-on-surface-variant">
+              Time: O(V + E) | Space: O(V) Optimized
+            </div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-code-badge text-tertiary">Interviews</span>
+<a class="text-on-surface hover:text-tertiary font-label-sm text-label-sm font-semibold flex items-center gap-1" href="#videos">Browse Videos →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 6. COLLABORATION SECTION                   -->
+<!-- ========================================== -->
+<section class="w-full px-gutter py-space-xl scroll-mt-24" id="collaboration">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Collaboration Heading -->
+<div class="flex flex-col gap-space-xs text-center items-center">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-md bg-secondary/10 text-secondary w-max">
+<span class="material-symbols-outlined text-[16px]">partner_exchange</span>
+<span class="font-code-badge text-code-badge uppercase font-semibold">Brand &amp; Corporate Partnerships</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+          Let's Build Something Amazing Together
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Open for Sponsored Videos, Brand Partnerships, Developer Tool Reviews, Corporate Engineering Training, College Workshops &amp; Technical Advisory.
+        </p>
+</div>
+<!-- Collaboration Grid / Booking System -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Explainer & Proof (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-3xl bg-surface-container-low/80 backdrop-blur-xl flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Why Partner with TechiGuru?</h3>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary/15 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">target</span>
+</div>
+<div>
+<h5 class="font-headline-sm text-body-sm font-bold text-on-surface">Targeted Developer Audience</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Our community consists of practicing software engineers, tech leads, university CS students, and hiring managers.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary/15 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<h5 class="font-headline-sm text-body-sm font-bold text-on-surface">High-Trust Technical Demos</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">We don't read scripted promotional lines. We build authentic, production-grade applications using your API, platform, or developer tool.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary/15 text-tertiary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">co_present</span>
+</div>
+<div>
+<h5 class="font-headline-sm text-body-sm font-bold text-on-surface">Corporate &amp; Campus Footprint</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engaging in-person workshops, keynote university tech talks, and structured hands-on employee upskilling bootcamps.</p>
+</div>
+</div>
+</div>
+<!-- Response SLA Tag -->
+<div class="mt-space-sm p-space-sm rounded-xl bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-label-sm text-on-surface font-semibold">Response Time SLA</span>
+</div>
+<span class="font-code-badge text-code-badge text-secondary font-bold">Within 24 Hours</span>
+</div>
+</div>
+</div>
+<!-- Right Booking Form (7 Cols) -->
+<div class="lg:col-span-7">
+<form class="p-space-lg rounded-3xl bg-surface-container-low/90 backdrop-blur-2xl shadow-xl flex flex-col gap-space-md" id="collabForm">
+<!-- Type Selector Pills -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-code-badge text-code-badge text-on-surface font-semibold">Select Collaboration Category:</label>
+<div class="flex flex-wrap gap-1.5" id="collabTypeContainer">
+<button class="collab-type-pill px-space-sm py-1.5 rounded-xl font-code-badge text-label-sm bg-secondary text-on-secondary font-bold transition-all shadow-sm" data-type="Sponsored Video" type="button">Sponsored Video</button>
+<button class="collab-type-pill px-space-sm py-1.5 rounded-xl font-code-badge text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" data-type="Brand Partnership" type="button">Brand Partnership</button>
+<button class="collab-type-pill px-space-sm py-1.5 rounded-xl font-code-badge text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" data-type="DevTool Review" type="button">DevTool Review</button>
+<button class="collab-type-pill px-space-sm py-1.5 rounded-xl font-code-badge text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" data-type="College Workshop" type="button">College Workshop</button>
+<button class="collab-type-pill px-space-sm py-1.5 rounded-xl font-code-badge text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" data-type="Corporate Training" type="button">Corporate Training</button>
+<button class="collab-type-pill px-space-sm py-1.5 rounded-xl font-code-badge text-label-sm bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" data-type="Webinar / Podcast" type="button">Webinar / Podcast</button>
+</div>
+<input id="selectedCollabType" name="collab_type" type="hidden" value="Sponsored Video"/>
+</div>
+<!-- Form Row 1 -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="collabName">Full Name *</label>
+<input class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="collabName" placeholder="e.g. Alex Mercer" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="collabCompany">Company / Institution *</label>
+<input class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="collabCompany" placeholder="e.g. CloudTech Inc. / University" required="" type="text"/>
+</div>
+</div>
+<!-- Form Row 2 -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="collabEmail">Work Email *</label>
+<input class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="collabEmail" placeholder="collab@organization.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="collabPhone">Phone / WhatsApp</label>
+<input class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="collabPhone" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<!-- Form Row 3 -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="collabBudget">Estimated Budget Range</label>
+<select class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none" id="collabBudget">
+<option value="$1,000 - $3,000">$1,000 – $3,000 USD</option>
+<option selected="" value="$3,000 - $7,500">$3,000 – $7,500 USD</option>
+<option value="$7,500 - $15,000">$7,500 – $15,000 USD</option>
+<option value="$15,000+">$15,000+ USD</option>
+<option value="Custom / Non-Profit">Academic / Non-Profit</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="collabDate">Target Launch Timeline</label>
+<input class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none" id="collabDate" type="date"/>
+</div>
+</div>
+<!-- Details -->
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="collabMessage">Project Brief &amp; Objectives *</label>
+<textarea class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="collabMessage" placeholder="Describe your product, expected deliverables, target dates, or workshop syllabus requirements..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button & Feedback Area -->
+<div class="pt-space-xs flex flex-col gap-space-sm">
+<button class="w-full py-space-sm px-space-lg rounded-xl bg-gradient-to-r from-primary-container to-secondary-container text-on-primary-container font-headline-sm text-body-md font-bold shadow-[0_0_25px_rgba(77,142,255,0.4)] hover:shadow-[0_0_35px_rgba(76,215,246,0.6)] transition-all flex items-center justify-center gap-space-sm" id="collabSubmitBtn" type="submit">
+<span>Submit Collaboration Proposal</span>
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+<div class="hidden p-space-md rounded-xl bg-surface-container-highest text-secondary font-body-sm text-body-sm flex items-center gap-space-sm" id="collabSuccessMsg">
+<span class="material-symbols-outlined text-secondary text-[24px]">task_alt</span>
+<div>
+<p class="font-bold text-on-surface">Proposal Received Successfully!</p>
+<p class="text-on-surface-variant">Our team reviews partnerships twice daily. We will contact you at your provided email within 24 hours.</p>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 7. TECHNOLOGY BLOG SECTION                 -->
+<!-- ========================================== -->
+<section class="w-full px-gutter py-space-xl bg-surface-container-lowest/40 scroll-mt-24" id="blogs">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Section Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-code-badge text-code-badge text-secondary font-semibold uppercase tracking-wider">ENGINEERING ARTICLES</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+            Latest From The Tech Blog
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Written architectural blueprints, benchmarks, and deep-dive design documents.
+          </p>
+</div>
+<a class="px-space-md py-space-xs rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm font-semibold transition-colors flex items-center gap-1 w-max" href="https://techiguru.in/" target="_blank">
+<span>Read All On techiguru.in</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+<!-- Blog Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Blog 1 -->
+<article class="p-space-lg rounded-2xl bg-surface-container-low/80 backdrop-blur-md flex flex-col justify-between hover:bg-surface-container transition-all shadow-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-secondary/15 text-secondary font-semibold">Generative AI</span>
+<span class="font-body-sm text-label-sm text-outline">6 min read</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-secondary transition-colors">
+              Why We Replaced Traditional Microservices with LangGraph Multi-Agent Workflows
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              A dissection of state persistence, cyclical reasoning graphs, and cost minimization strategies when moving beyond sequential prompt chaining in 2025.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-on-surface-variant">Feb 14, 2025</span>
+<button class="open-blog-modal text-secondary font-body-sm text-body-sm font-semibold hover:underline flex items-center gap-1" data-blog="1">
+              Read Article →
+            </button>
+</div>
+</article>
+<!-- Blog 2 -->
+<article class="p-space-lg rounded-2xl bg-surface-container-low/80 backdrop-blur-md flex flex-col justify-between hover:bg-surface-container transition-all shadow-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-primary/15 text-primary font-semibold">Cloud &amp; DevOps</span>
+<span class="font-body-sm text-label-sm text-outline">8 min read</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+              Cutting 65% of AWS Bill with Karpenter Auto-provisioning and ARM Graviton
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Real world benchmarks comparing standard Kubernetes Cluster Autoscaler against AWS Karpenter on spot instances running high traffic Go and Node workloads.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-on-surface-variant">Jan 30, 2025</span>
+<button class="open-blog-modal text-primary font-body-sm text-body-sm font-semibold hover:underline flex items-center gap-1" data-blog="2">
+              Read Article →
+            </button>
+</div>
+</article>
+<!-- Blog 3 -->
+<article class="p-space-lg rounded-2xl bg-surface-container-low/80 backdrop-blur-md flex flex-col justify-between hover:bg-surface-container transition-all shadow-md group">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded font-code-badge text-label-sm bg-tertiary/15 text-tertiary font-semibold">Career &amp; DSA</span>
+<span class="font-body-sm text-label-sm text-outline">5 min read</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-tertiary transition-colors">
+              The 12 System Design Patterns That Actually Matter for Senior Engineering Interviews
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Skip memorizing hundreds of questions. Understand write-ahead logs, two-phase commits, Bloom filters, and backpressure mechanisms deeply.
+            </p>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-badge text-label-sm text-on-surface-variant">Jan 18, 2025</span>
+<button class="open-blog-modal text-tertiary font-body-sm text-body-sm font-semibold hover:underline flex items-center gap-1" data-blog="3">
+              Read Article →
+            </button>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Article Reader Drawer Modal -->
+<div class="fixed inset-0 z-50 bg-surface-dim/90 backdrop-blur-2xl flex items-center justify-end hidden opacity-0 transition-opacity duration-300" id="blogModal">
+<div class="w-full max-w-2xl h-full bg-surface-container-lowest p-space-xl flex flex-col justify-between overflow-y-auto shadow-2xl relative">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-code-badge text-code-badge text-secondary font-bold">TECHI GURU EDITORIAL</span>
+<button class="w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface" id="closeBlogModal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold" id="blogModalTitle">Article Title</h3>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm pb-space-xs">
+<span>By Pawan Sharma</span>
+<span>•</span>
+<span>Official TechiGuru Publication</span>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant space-y-space-md leading-relaxed" id="blogModalBody">
+<p>This architectural breakdown dives into production design patterns, explaining trade-offs between horizontal scale, operational overhead, and latency constraints.</p>
+<p>Read the comprehensive whitepaper, download the accompanying benchmark GitHub repo, and view full execution logs on the official portal at <a class="text-secondary font-semibold underline" href="https://techiguru.in/" target="_blank">techiguru.in</a>.</p>
+</div>
+</div>
+<div class="pt-space-xl">
+<a class="w-full py-space-sm rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-body-md font-bold text-center block" href="https://techiguru.in/" target="_blank">
+          Open Full Interactive Guide on techiguru.in
+        </a>
+</div>
+</div>
+</div>
+<!-- ========================================== -->
+<!-- 8. NEWSLETTER & COMMUNITY SECTION          -->
+<!-- ========================================== -->
+<section class="w-full px-gutter py-space-xl">
+<div class="w-full max-w-7xl mx-auto">
+<div class="p-space-xl rounded-3xl bg-gradient-to-r from-surface-container via-surface-container-low to-surface-container-high shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-xl">
+<span class="font-code-badge text-code-badge text-secondary font-semibold uppercase">NEVER MISS A RELEASE</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">Stay Ahead in Modern Technology</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Get curated weekly code repositories, system architecture cheat sheets, and early-bird notifications for live YouTube streams.
+          </p>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Zero Spam • One-click Unsubscribe • 100% Free Knowledge</span>
+</div>
+</div>
+<div class="w-full lg:max-w-md flex flex-col gap-space-xs">
+<form class="flex flex-col sm:flex-row gap-space-xs" id="newsletterForm">
+<input class="w-full px-space-md py-space-sm rounded-xl bg-surface-dim text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" id="nlEmail" placeholder="developer@domain.com" required="" type="email"/>
+<button class="px-space-lg py-space-sm rounded-xl bg-secondary hover:bg-secondary-fixed-dim text-on-secondary font-body-sm text-body-sm font-bold shrink-0 transition-colors" type="submit">
+              Join Free
+            </button>
+</form>
+<span class="font-code-badge text-label-sm text-secondary hidden" id="nlFeedback">
+            ✓ Successfully subscribed! Check your inbox for the welcome starter pack.
+          </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 9. CONNECT & CONTACT SECTION               -->
+<!-- ========================================== -->
+<section class="w-full px-gutter py-space-xl bg-surface-container-lowest scroll-mt-24" id="contact">
+<div class="w-full max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col gap-space-xs text-center items-center">
+<span class="font-code-badge text-code-badge text-secondary font-semibold uppercase tracking-wider">DIRECT REACHOUT</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">
+          Connect &amp; Contact TechiGuru
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Have an inquiry, question, student doubt, or speaking invitation? Reach out across our official communication lines.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Contact Cards Matrix (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Email Card -->
+<a class="p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex items-center gap-space-md shadow-sm" href="mailto:techiguru.in@gmail.com">
+<div class="w-12 h-12 rounded-xl bg-secondary/15 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+<div class="flex flex-col">
+<span class="font-code-badge text-label-sm text-outline">PRIMARY EMAIL</span>
+<span class="font-headline-sm text-body-sm font-bold text-on-surface">techiguru.in@gmail.com</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">General, sponsorship &amp; support queries</span>
+</div>
+</a>
+<!-- Official Website Card -->
+<a class="p-space-md rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all flex items-center gap-space-md shadow-sm" href="https://techiguru.in/" target="_blank">
+<div class="w-12 h-12 rounded-xl bg-primary/15 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">language</span>
+</div>
+<div class="flex flex-col">
+<span class="font-code-badge text-label-sm text-outline">OFFICIAL PLATFORM</span>
+<span class="font-headline-sm text-body-sm font-bold text-on-surface">https://techiguru.in/</span>
+<span class="font-body-sm text-label-sm text-on-surface-variant">Main portal for articles &amp; deep courses</span>
+</div>
+</a>
+<!-- Social Matrix Pills -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center gap-space-xs transition-colors" href="https://www.youtube.com/@techiguru-in" target="_blank">
+<span class="material-symbols-outlined text-error text-[20px]">smart_display</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-sm font-semibold text-on-surface">YouTube</span>
+<span class="font-code-badge text-label-sm text-outline">@techiguru-in</span>
+</div>
+</a>
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center gap-space-xs transition-colors" href="https://www.youtube.com/c/apkglobal" target="_blank">
+<span class="material-symbols-outlined text-error text-[20px]">video_settings</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-sm font-semibold text-on-surface">APKGlobal</span>
+<span class="font-code-badge text-label-sm text-outline">@apkglobal</span>
+</div>
+</a>
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center gap-space-xs transition-colors" href="https://www.instagram.com/techiguru.in" target="_blank">
+<span class="material-symbols-outlined text-secondary text-[20px]">photo_camera</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-sm font-semibold text-on-surface">Instagram</span>
+<span class="font-code-badge text-label-sm text-outline">@techiguru.in</span>
+</div>
+</a>
+<a class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center gap-space-xs transition-colors" href="https://www.facebook.com/pawansharma548" target="_blank">
+<span class="material-symbols-outlined text-primary text-[20px]">public</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-label-sm font-semibold text-on-surface">Facebook</span>
+<span class="font-code-badge text-label-sm text-outline">pawansharma548</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Direct Message Form (7 Cols) -->
+<div class="lg:col-span-7">
+<form class="p-space-lg rounded-3xl bg-surface-container-low flex flex-col gap-space-md shadow-xl" id="contactMsgForm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Send a Direct Message</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="cmName">Your Name *</label>
+<input class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="cmName" placeholder="John Doe" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="cmEmail">Email Address *</label>
+<input class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="cmEmail" placeholder="john@example.com" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="cmSubject">Subject *</label>
+<input class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="cmSubject" placeholder="General inquiry, question, or course feedback" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-code-badge text-label-sm text-outline" for="cmMessage">Your Message *</label>
+<textarea class="p-space-sm rounded-xl bg-surface-container-high text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="cmMessage" placeholder="How can TechiGuru support your engineering journey?" required="" rows="4"></textarea>
+</div>
+<button class="py-space-sm px-space-lg rounded-xl bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-headline-sm text-body-md font-semibold transition-all flex items-center justify-center gap-space-xs" id="cmSubmitBtn" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<div class="hidden p-space-sm rounded-xl bg-surface-container text-secondary font-body-sm text-body-sm flex items-center gap-2" id="cmSuccess">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Thank you! Your message has been routed to Pawan Sharma and the TechiGuru team.</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- CLIENT INTERACTIVITY JAVASCRIPT           -->
+<!-- ========================================== -->
+<script>
+    (function() {
+      // 1. Video Filtering & Search Logic
+      const chips = document.querySelectorAll('.filter-chip');
+      const cards = document.querySelectorAll('.video-card');
+      const searchInput = document.getElementById('videoSearchInput');
+      const sortSelect = document.getElementById('videoSortSelect');
+      const videoGrid = document.getElementById('videoGrid');
+
+      let currentCategory = 'all';
+
+      function filterVideos() {
+        const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+
+        cards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          const title = card.querySelector('h3').textContent.toLowerCase();
+          const desc = card.querySelector('p').textContent.toLowerCase();
+
+          const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+          const matchesSearch = (!query || title.includes(query) || desc.includes(query));
+
+          if (matchesCategory && matchesSearch) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      }
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => {
+            c.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-[0_0_15px_rgba(76,215,246,0.4)]', 'font-bold');
+            c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          });
+          chip.classList.add('bg-secondary', 'text-on-secondary', 'shadow-[0_0_15px_rgba(76,215,246,0.4)]', 'font-bold');
+          chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+
+          currentCategory = chip.getAttribute('data-category');
+          filterVideos();
+        });
+      });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterVideos);
+      }
+
+      if (sortSelect && videoGrid) {
+        sortSelect.addEventListener('change', () => {
+          const criteria = sortSelect.value;
+          const cardArray = Array.from(cards);
+
+          if (criteria === 'popular') {
+            cardArray.sort((a, b) => {
+              return parseInt(b.getAttribute('data-views') || '0', 10) - parseInt(a.getAttribute('data-views') || '0', 10);
+            });
+          } else if (criteria === 'latest') {
+            cardArray.sort((a, b) => {
+              return new Date(b.getAttribute('data-date')).getTime() - new Date(a.getAttribute('data-date')).getTime();
+            });
+          }
+
+          cardArray.forEach(card => videoGrid.appendChild(card));
+        });
+      }
+
+      // 2. Video Preview Modal
+      const modal = document.getElementById('videoModal');
+      const closeBtn = document.getElementById('closeVideoModal');
+      const triggers = document.querySelectorAll('.open-video-trigger');
+      const modalTitle = document.getElementById('modalVideoTitle');
+
+      triggers.forEach(t => {
+        t.addEventListener('click', (e) => {
+          e.preventDefault();
+          const title = t.getAttribute('data-title');
+          if (modalTitle && title) modalTitle.textContent = title;
+          if (modal) {
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+              modal.classList.remove('opacity-0');
+            }, 10);
+          }
+        });
+      });
+
+      if (closeBtn && modal) {
+        closeBtn.addEventListener('click', () => {
+          modal.classList.add('opacity-0');
+          setTimeout(() => {
+            modal.classList.add('hidden');
+          }, 300);
+        });
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.add('opacity-0');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+          }
+        });
+      }
+
+      // 3. Collaboration Type Selector
+      const collabPills = document.querySelectorAll('.collab-type-pill');
+      const collabInput = document.getElementById('selectedCollabType');
+
+      collabPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          collabPills.forEach(p => {
+            p.classList.remove('bg-secondary', 'text-on-secondary', 'font-bold');
+            p.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+          });
+          pill.classList.add('bg-secondary', 'text-on-secondary', 'font-bold');
+          pill.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+
+          if (collabInput) {
+            collabInput.value = pill.getAttribute('data-type');
+          }
+        });
+      });
+
+      // 4. Collaboration Form Submission Simulation
+      const collabForm = document.getElementById('collabForm');
+      const collabSuccess = document.getElementById('collabSuccessMsg');
+      const collabSubmitBtn = document.getElementById('collabSubmitBtn');
+
+      if (collabForm) {
+        collabForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (collabSubmitBtn) {
+            collabSubmitBtn.disabled = true;
+            collabSubmitBtn.innerHTML = `<span>Transmitting Proposal...</span>`;
+          }
+
+          setTimeout(() => {
+            if (collabSubmitBtn) {
+              collabSubmitBtn.classList.add('hidden');
+            }
+            if (collabSuccess) {
+              collabSuccess.classList.remove('hidden');
+            }
+            collabForm.reset();
+          }, 600);
+        });
+      }
+
+      // 5. Blog Drawer Modal
+      const blogModal = document.getElementById('blogModal');
+      const closeBlogBtn = document.getElementById('closeBlogModal');
+      const blogTriggers = document.querySelectorAll('.open-blog-modal');
+      const blogModalTitle = document.getElementById('blogModalTitle');
+
+      const blogData = {
+        '1': 'Why We Replaced Traditional Microservices with LangGraph Multi-Agent Workflows',
+        '2': 'Cutting 65% of AWS Bill with Karpenter Auto-provisioning and ARM Graviton',
+        '3': 'The 12 System Design Patterns That Actually Matter for Senior Engineering Interviews'
+      };
+
+      blogTriggers.forEach(bt => {
+        bt.addEventListener('click', () => {
+          const id = bt.getAttribute('data-blog');
+          if (blogModalTitle && blogData[id]) {
+            blogModalTitle.textContent = blogData[id];
+          }
+          if (blogModal) {
+            blogModal.classList.remove('hidden');
+            setTimeout(() => {
+              blogModal.classList.remove('opacity-0');
+            }, 10);
+          }
+        });
+      });
+
+      if (closeBlogBtn && blogModal) {
+        closeBlogBtn.addEventListener('click', () => {
+          blogModal.classList.add('opacity-0');
+          setTimeout(() => blogModal.classList.add('hidden'), 300);
+        });
+
+        blogModal.addEventListener('click', (e) => {
+          if (e.target === blogModal) {
+            blogModal.classList.add('opacity-0');
+            setTimeout(() => blogModal.classList.add('hidden'), 300);
+          }
+        });
+      }
+
+      // 6. Newsletter Subscription
+      const nlForm = document.getElementById('newsletterForm');
+      const nlFeedback = document.getElementById('nlFeedback');
+      if (nlForm) {
+        nlForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (nlFeedback) nlFeedback.classList.remove('hidden');
+          nlForm.reset();
+        });
+      }
+
+      // 7. Contact Message Form
+      const contactForm = document.getElementById('contactMsgForm');
+      const contactSuccess = document.getElementById('cmSuccess');
+      const cmBtn = document.getElementById('cmSubmitBtn');
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (cmBtn) cmBtn.classList.add('hidden');
+          if (contactSuccess) contactSuccess.classList.remove('hidden');
+          contactForm.reset();
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface-variant shadow-[0_-1px_12px_rgba(0,0,0,0.2)]"><div class="w-full px-gutter py-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md pr-space-lg"><div class="flex items-center gap-space-sm"><img alt="TechiGuru Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UMPfkQjFA3bF8nab-RnkEKW7Sb7aBIdCCdtSpzBh5pNImOTwZTx5-xZ7brOAqYGZChPAl09wlurYKqeeRqAmh0YMHFVo9NG-M0lKQvS5rvCiTRcHNoFZ5ZCIHTlq0BUs6kst8Tx0GyQgZGwVAVv3uZwOuOzGvWUmAO0V0C_zDrvJG3wuYtXSAMzuGLGhHs8VGVRZajbH6tXKmyltUuES-VcofSWYjxUXLok8gi6J0"/><span class="font-headline-sm text-headline-sm font-bold bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">TechiGuru</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Practical technology education for the real world. Architecting scalable knowledge for modern developers and engineering pioneers.</p><div class="flex items-center gap-space-sm mt-space-xs"><a aria-label="YouTube" class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">play_circle</span></a><a aria-label="Instagram" class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="Facebook" class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a aria-label="Website" class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Quick Links</span><nav class="flex flex-col gap-space-xs"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="videos" href="#">Videos</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="about" href="#">About</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="techiguru" href="#">TechiGuru Platform</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="blogs" href="#">Tech Blogs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="collaboration" href="#">Collaboration</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Technologies</span><div class="flex flex-wrap gap-space-xs"><span class="px-space-sm py-space-xs rounded font-code-badge text-code-badge bg-surface-container-high text-secondary hover:bg-surface-container-highest cursor-default">Python</span><span class="px-space-sm py-space-xs rounded font-code-badge text-code-badge bg-surface-container-high text-secondary hover:bg-surface-container-highest cursor-default">Java</span><span class="px-space-sm py-space-xs rounded font-code-badge text-code-badge bg-surface-container-high text-secondary hover:bg-surface-container-highest cursor-default">MERN</span><span class="px-space-sm py-space-xs rounded font-code-badge text-code-badge bg-surface-container-high text-secondary hover:bg-surface-container-highest cursor-default">AI</span><span class="px-space-sm py-space-xs rounded font-code-badge text-code-badge bg-surface-container-high text-secondary hover:bg-surface-container-highest cursor-default">DevOps</span><span class="px-space-sm py-space-xs rounded font-code-badge text-code-badge bg-surface-container-high text-secondary hover:bg-surface-container-highest cursor-default">AWS</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Newsletter</span><p class="font-body-sm text-body-sm text-on-surface-variant">Get curated weekly blueprints, architectural deep-dives, and video releases.</p><form action="#" class="flex flex-col gap-space-xs mt-space-xs"><div class="flex items-center rounded-lg bg-surface-container-high px-space-sm py-space-xs"><span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-space-xs">mail</span><input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none w-full" placeholder="developer@domain.com" type="email"/></div><button class="w-full py-space-xs px-space-md rounded-lg bg-primary-container text-on-primary-container font-body-sm text-body-sm font-semibold hover:bg-primary hover:text-on-primary transition-all" type="button">Subscribe</button></form></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md bg-surface-container-lowest"><span class="font-body-sm text-body-sm text-outline">© 2026 TechiGuru. All Rights Reserved.</span><div class="flex items-center gap-space-md"><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Code of Conduct</a></div></div></div></footer></body></html>
